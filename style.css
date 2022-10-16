@@ -86,7 +86,7 @@ body {
 .container {
   align-items: center;
   justify-content: space-between;
-  height: 65vh;
+  min-height: 65vh;
   width: 100%;
   max-width: 375px;
   padding: 1.5em 1.5em 4em;
@@ -111,4 +111,13 @@ body {
 .container p {
   font-size: 1.25rem;
   padding: 0 1em;
+}
+
+@media only screen and (max-width: 400px) {
+  :root {
+    font-size: 13px;
+  }
+  .container {
+    width: 80%;
+  }
 }
