@@ -105,9 +105,10 @@ body {
 }
 
 .container h1 {
-  font-size: 1.75rem;
+  font-size: 1.8rem;
 }
 
 .container p {
   font-size: 1.25rem;
+  padding: 0 1em;
 }
