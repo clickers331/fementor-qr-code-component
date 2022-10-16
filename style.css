@@ -1,0 +1,113 @@
+:root {
+  --color-light-gray: 212, 45%, 89%;
+  --color-light-blue: 220, 15%, 55%;
+  --color-dark-blue: 218, 44%, 22%;
+  --color-white: 0, 0%, 100%;
+  --font-main: "Outfit", monospace;
+  --font-weight-light: 400;
+  --font-weight-bold: 700;
+  --border-radius: 15px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------*/
+/* Utility Classes*/
+/*----------------*/
+
+.bg-light-gray {
+  background-color: hsl(var(--color-light-gray));
+}
+
+.bg-light-blue {
+  background-color: hsl(var(--color-light-blue));
+}
+
+.bg-white {
+  background-color: hsl(var(--color-white));
+}
+
+.bg-dark-blue {
+  background-color: hsl(var(--color-dark-blue));
+}
+
+.text-light-gray {
+  color: hsl(var(--color-light-gray));
+}
+
+.text-light-blue {
+  color: hsl(var(--color-light-blue));
+}
+
+.text-white {
+  color: hsl(var(--color-white));
+}
+
+.text-dark-blue {
+  color: hsl(var(--color-dark-blue));
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.font-main {
+  font-family: var(--font-main);
+}
+
+.font-weight-light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/*------------------------*/
+
+.container {
+  align-items: center;
+  justify-content: space-between;
+  height: 65vh;
+  width: 100%;
+  max-width: 375px;
+  padding: 1.5em 1.5em 4em;
+  border-radius: calc(var(--border-radius) + 10px);
+}
+
+.container img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.container h1,
+.container p {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 1.75rem;
+}
+
+.container p {
+  font-size: 1.25rem;
+}
